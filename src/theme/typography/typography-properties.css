@@ -1,0 +1,17 @@
+@property --typography--font-family {
+  syntax: '*';
+  inherits: true;
+  initial-value: Roboto, Helvetica, Arial, sans-serif;
+}
+
+@property --typography--font-weight {
+  syntax: '<number>';
+  inherits: true;
+  initial-value: 400;
+}
+
+@property --typography--line-height {
+  syntax: '<number>';
+  inherits: true;
+  initial-value: 1.5;
+}

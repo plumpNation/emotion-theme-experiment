@@ -1,0 +1,239 @@
+@property --palette__background {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #FFFFFF;
+}
+
+@property --palette__primary--main {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #2196F3;
+}
+
+@property --palette__primary--light {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #BBDEFB;
+}
+
+@property --palette__primary--dark {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #1976D2;
+}
+
+@property --palette__primary--contrastText {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #FFFFFF;
+}
+
+@property --palette__secondary--main {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #FF4081;
+}
+
+@property --palette__secondary--light {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #FF80AB;
+}
+
+@property --palette__secondary--dark {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #F50057;
+}
+
+@property --palette__secondary--contrastText {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #FFFFFF;
+}
+
+@property --palette__error--main {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #F44336;
+}
+
+@property --palette__error--light {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #EF5350;
+}
+
+@property --palette__error--dark {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #D32F2F;
+}
+
+@property --palette__error--contrastText {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #FFFFFF;
+}
+
+@property --palette__warning--main {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #FF9800;
+}
+
+@property --palette__warning--light {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #FFB74D;
+}
+
+@property --palette__warning--dark {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #F57C00;
+}
+
+@property --palette__warning--contrastText {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #FFFFFF;
+}
+
+@property --palette__info--main {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #2196F3;
+}
+
+@property --palette__info--light {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #BBDEFB;
+}
+
+@property --palette__info--dark {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #1976D2;
+}
+
+@property --palette__info--contrastText {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #FFFFFF;
+}
+
+@property --palette__success--main {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #4CAF50;
+}
+
+@property --palette__success--light {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #C8E6C9;
+}
+
+@property --palette__success--dark {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #388E3C;
+}
+
+@property --palette__success--contrastText {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #FFFFFF;
+}
+
+@property --palette__background--default {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #FFFFFF;
+}
+
+@property --palette__default--main {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #9E9E9E;
+}
+
+@property --palette__default--light {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #BDBDBD;
+}
+
+@property --palette__default--dark {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #616161;
+}
+
+@property --palette__default--contrastText {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #FFFFFF;
+}
+
+@property --palette__grey--50 {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #FAFAFA;
+}
+
+@property --palette__grey--100 {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #F5F5F5;
+}
+
+@property --palette__grey--200 {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #EEEEEE;
+}
+
+@property --palette__grey--300 {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #E0E0E0;
+}
+
+@property --palette__grey--400 {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #BDBDBD;
+}
+
+@property --palette__grey--500 {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #9E9E9E;
+}
+
+@property --palette__grey--600 {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #757575;
+}
+
+@property --palette__grey--700 {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #616161;
+}
+
+@property --palette__grey--800 {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #424242;
+}
+
+@property --palette__grey--900 {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #212121;
+}
