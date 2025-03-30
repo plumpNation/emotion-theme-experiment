@@ -12,6 +12,7 @@ type Typography = {
   fontFamily: Property.FontFamily;
   fontWeight?: Property.FontWeight;
   lineHeight?: Property.LineHeight;
+  margin?: Property.Margin;
 }
 
 export type AppTheme = {
@@ -29,7 +30,6 @@ export type AppTheme = {
   };
   spacing: (factor?: number) => string;
   typography: {
-    fontFamily: Property.FontFamily;
     h1: Typography;
     h2: Typography;
     h3: Typography;
@@ -118,7 +118,6 @@ export const theme: AppTheme = {
   spacing: unit,
 
   typography: {
-    fontFamily,
     h1: {
       fontSize: "2rem",
       fontFamily,

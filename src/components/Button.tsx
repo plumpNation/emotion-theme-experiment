@@ -1,8 +1,10 @@
 import styled from '@emotion/styled';
 import { type ButtonHTMLAttributes, type FC } from 'react';
+import { Typography } from './Typography';
 
 export type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   color?: 'primary' | 'secondary' | 'default';
+  htmlDisabled?: boolean | null;
 };
 
 const StyledButton = styled.button<ButtonProps & { softDisabled?: boolean }>`
@@ -11,12 +13,20 @@ const StyledButton = styled.button<ButtonProps & { softDisabled?: boolean }>`
     transition: background-color 0.3s ease;
     border: none;
     color: ${softDisabled ? theme.palette.grey[600] : theme.palette[color].contrastText};
-    font-size: ${theme.typography.body1.fontSize};
-    font-family: ${theme.typography.fontFamily};
-    font-weight: ${theme.typography.body1.fontWeight};
-    line-height: ${theme.typography.body1.lineHeight};
     padding: ${theme.spacing()} ${theme.spacing(2)};
     border-radius: ${theme.borderRadius};
+    cursor: ${softDisabled ? 'not-allowed' : 'pointer'};
+
+    &:hover {
+      background-color: ${theme.palette[color].light};
+    }
+
+    &:disabled {
+      background-color: ${color ? theme.palette[color].light : theme.palette.grey[300]};
+      color: ${theme.palette.grey[600]};
+      cursor: not-allowed;
+      pointer-events: none;
+    }
   `}`;
 
 export const Button: FC<ButtonProps> = ({
@@ -24,6 +34,7 @@ export const Button: FC<ButtonProps> = ({
   type = 'button',
   onClick,
   disabled,
+  htmlDisabled: trueDisabled,
   ...props
 }) => {
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
@@ -37,8 +48,14 @@ export const Button: FC<ButtonProps> = ({
   };
 
   return (
-    <StyledButton softDisabled={disabled} type={type} onClick={handleClick} {...props}>
-      {children}
+    <StyledButton
+      disabled={trueDisabled ?? undefined}
+      softDisabled={disabled}
+      type={type}
+      onClick={handleClick}
+      {...props}
+    >
+      <Typography>{children}</Typography>
     </StyledButton>
   );
 };
